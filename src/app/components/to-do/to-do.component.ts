@@ -27,14 +27,16 @@ export class ToDoComponent implements OnInit {
   }
 
   add(itemTitle) {
-    debugger;
     this._toDoService.addTitle(itemTitle.value);
     itemTitle.value = null;
   }
 
   check(key, checked) {
     this._toDoService.checkOrUnCheckTitle(key, !checked);
+  }
 
+  delete(key) {
+    this._toDoService.removeTitle(key);
   }
 
 }

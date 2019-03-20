@@ -16,7 +16,7 @@
         <i class="fa-lg" [ngClass]="item.isChecked ? 'far fa-check-circle' : 'far fa-circle'"></i>
       </span>
       {{ item.title }}
-      <span class="hover-cursor text-danger pull-right">
+      <span class="hover-cursor text-danger pull-right" (click)="delete(item.$key)">
         <i class="far fa-trash-alt fa-lg"></i>
       </span>
     </li>

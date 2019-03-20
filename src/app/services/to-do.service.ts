@@ -15,7 +15,6 @@ export class ToDoService {
   }
 
   addTitle(title: string) {
-    debugger;
     this.toDoList.push({
       title: title,
       isChecked: false
