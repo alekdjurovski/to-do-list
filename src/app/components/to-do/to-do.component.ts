@@ -32,4 +32,9 @@ export class ToDoComponent implements OnInit {
     itemTitle.value = null;
   }
 
+  check(key, checked) {
+    this._toDoService.checkOrUnCheckTitle(key, !checked);
+
+  }
+
 }
